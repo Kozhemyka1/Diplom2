@@ -135,7 +135,12 @@ body {
 
 /* ___________++++++++++++++++++++_________________popup_______________++++++++++++++_______________________________________ */
 
-
+.popup__button {
+  display: none; /* Кнопка для папапа */
+  background: mediumvioletred;
+  color: bisque;
+  padding: 20px;
+}
 
 .popup__box {
   display: none;
@@ -248,12 +253,7 @@ body {
   background: #fff;
 }
 
-.popup__button {
-  display: inline-flex;
-  background: mediumvioletred;
-  color: bisque;
-  padding: 20px;
-}
+
 
 
 .popup__comment {
