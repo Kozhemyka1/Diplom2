@@ -9,41 +9,50 @@
 </head>
 <body>
 
-  <div class="popup">
+  <div class="popup__hidden">
     <label for="popup__first" class="popup__button">Открыть</label>
     <input type="checkbox" class="popup-first" id="popup__first">
     <div class="popup__box">
         <div class="popup__content">
-            <form action="#/">
-              <label for="popup__first" class="popup__x">
-                <img src="svg/form-x.svg" alt="#/">
-              </label>
-                <div class="popup__title">Ваш фитбек</div>
-                <label for="how">Как часто вы заходите на сайт ?</label>
-                <input class="popup__number" type="number" placeholder="Почти каждый день" id="how" name="how" min="1" max="365" />
-            </form>
+          <form action="#/">
+            <label for="popup__first" class="popup__x">
+              <img src="svg/form-x.svg" alt="#/">
+            </label>
+              <div class="popup__title">Ваш фитбек</div>
+              <label for="how">
+                <span>Как часто вы заходите на сайт ?</span>
+                <select class="popup__select">
+                  <option value="moscow" selected>Почти не захожу</option>
+                  <option value="st-petersburg">Несколько раз в день</option>
+                  <option value="kazan">Каждый день</option>
+                </select>
+              </label> 
+          </form>
 
               <!-- <span>Вы плдписаны на e-mail рассылку ?</span> -->
-              <form action="#/">
-                <label for="yes-no">Вы плдписаны на e-mail рассылку ?</label>
-                <div class="popup__cheked">
-                  <div class="popup__radio">
-                    <input class="popup__cheked-radio" type="radio" id="yes-no" name="mail" value="yes" checked />
-                    <label for="yes-no">Да</label>
-                  </div>
-                  <div class="popup__radio">
-                    <input type="radio" id="yes-no" name="mail" value="no" checked />
-                    <label for="yes-no">Нет</label>
-                  </div>
-                </div>
-              </form>
-
-              <form class="popup__comment" action="#/" method="post">
-                <label for="comment">Расскажите, какой контент вы хотели бы видеть на нашем сайте ?</label>
-                <textarea class="popup__comment-descr" required placeholder="Может больше рецептов ?" name="comment" id="comment"></textarea>
-                <button class="popup__comment-button" type="submit">отправить</button>
-              </form>
+          <form action="#/">
+            <label for="yes-no">Вы плдписаны на e-mail рассылку ?</label>
+            <div class="popup__cheked">
+              <div class="popup__radio">
+                <label class="checkbox-group">
+                  <input class="popup__cheked-radio" type="radio" id="yes-no" name="mail" value="yes" checked>
+                  <span class="popup-text">Да</span>
+                </label>
+              </div>
+              <div class="popup__radio">
+                <label class="checkbox-group">
+                  <input class="popup__cheked-radio" type="radio" id="yes-no" name="mail" value="yes" checked>
+                  <span class="popup-text">Нет</span>
+                </label>
+              </div>
             </div>
+          </form>
+
+          <form class="popup__comment" action="#/" method="post">
+            <label for="comment">Расскажите, какой контент вы хотели бы видеть на нашем сайте ?</label>
+            <textarea class="popup__comment-descr" required placeholder="Может больше рецептов ?" name="comment" id="comment"></textarea>
+            <button class="popup__comment-button" type="submit">отправить</button>
+          </form>
         </div>
     </div>
   </div>  
@@ -99,7 +108,7 @@
                 <a href="" class="trend__column-descr-links-link">interior</a>
               </ul>
               <p class="trend__colum-descr-text">
-                Сейчас в тренде: сад на поддоконнике 
+                Сейчас в тренде: сад на подоконнике 
               </p>
             </div>
           </div>
@@ -113,7 +122,7 @@
                 <a href="" class="trend__column-descr-links-link"></a>
               </ul>
               <p class="trend__colum-descr-text">
-                Сыры на красивых картинках из интеренета: <br> какие они на вкус ? 
+                Сыры на красивых картинках из интернета: какие они на вкус? 
               </p>
             </div>
           </div>
@@ -134,14 +143,14 @@
         </div>
         
         <div class="trend__column-background trend__background4">
-          <div class="trend__column">
+          <div class="trend__column trend__column-last">
             <div class="trend__column-descr">
               <ul class="trend__colum-descr-links">
                 <a href="" class="trend__column-descr-links-link">food</a>
                 <a href="" class="trend__column-descr-links-link">health</a>
               </ul>
               <p class="trend__colum-descr-text">
-                Сейчас в тренде сколько: витамина С в лимонах ? 
+                Сейчас в тренде: сколько витамина С в лимонах ? 
               </p>
             </div>
           </div>
@@ -206,7 +215,7 @@
                 <address class="news__date-avtor">Неизвестный автор</address>
               </div>
               <div class="news__info-text">
-                <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
+                <p class="line-break">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
                 <p>Мы составили список лучших летних фестивалей по всему миру.</p>
               </div>
             </section>
@@ -223,7 +232,7 @@
               </ul>
               <h2 class="news__info-title"><a href="#0" class="news__info-title-link">Наукоёмкий подход к кулинарии</a></h2>
               <div class="news__date">
-                <time class="news__time" datetime="2019-06-10">10 июня 2019</time>
+                <time class="news__time" datetime="2019-06-10">14 июня 2019</time>
                 <address class="news__date-avtor">Неизвестный автор</address>
               </div>
               <div class="news__info-text">
@@ -262,7 +271,7 @@
             <article class="navigation__news">
               <img class="navigation__news-picture" src="images/small-post1.jpg" alt="человек стоит не берегу и смотрин на зкакт">
               <div class="navigation__news-post">
-                <time class="navigation__news-time" datetime="2019-06-10">10 июня 2019</time>
+                <time class="navigation__news-time" datetime="2019-06-10">14 июня 2019</time>
                 <a href="#0" class="navigation__news-subtitle">
                   10 мест, ради которых стоит проснуться
                 </a>
@@ -272,7 +281,7 @@
             <article class="navigation__news">
               <img class="navigation__news-picture" src="images/small-post2.jpg"  alt="девушка занимаеться йогой на берегу">
               <div class="navigation__news-post">
-                <time class="navigation__news-time" datetime="2019-06-10">10 июня 2019</time>
+                <time class="navigation__news-time" datetime="2019-06-10">14 июня 2019</time>
                 <a  href="#0" class="navigation__news-subtitle">
                   Йога для домашних
                 </a>
@@ -282,7 +291,7 @@
             <article class="navigation__news">
               <img class="navigation__news-picture" src="images/small-post3.jpg"  alt="один из прмеров интерера с изображением стула">
               <div class="navigation__news-post">
-                <time class="navigation__news-time" datetime="2019-06-10">10 июня 2019</time>
+                <time class="navigation__news-time" datetime="2019-06-10">14 июня 2019</time>
                 <a  href="#0" class="navigation__news-subtitle">
                   Как мы превратили классное место в <br> балкон
                 </a>
@@ -292,17 +301,17 @@
             <article class="navigation__news">
               <img class="navigation__news-picture" src="images/small-post4.jpg"  alt="фото стола с разными блюдами">
               <div class="navigation__news-post">
-                <time class="navigation__news-time" datetime="2019-06-10">10 июня 2019</time>
+                <time class="navigation__news-time" datetime="2019-06-10">14 июня 2019</time>
                 <a href="#0" class="navigation__news-subtitle">
-                  Кулинарный подход к науке
+                  Кулинарный подход <br> к науке
                 </a>
               </div>
             </article>
             
-            <article class="navigation__news">
+            <article class="navigation__news navigation__news-last">
               <img class="navigation__news-picture" src="images/small-post5.jpg"  alt="три девушки стоят спиной вперед с длинными волосами">
               <div class="navigation__news-post">
-                <time class="navigation__news-time" datetime="2019-06-10">10 июня 2019</time>
+                <time class="navigation__news-time" datetime="2019-06-10">14 июня 2019</time>
                 <a href="#0" class="navigation__news-subtitle">
                   лучшие прически для распущенных волос                
                 </a>
@@ -358,7 +367,7 @@
           </section>
   
           <section class="diraction">
-            <h2 class="navigation__title">Темы</h2>
+            <h2 class="diraction__title navigation__title">Темы</h2>
             <ul>
               <li class="diraction__links">
                 <a href="#0" class="direction__link">Красота<span class="diraction__sup">12</span></a>
@@ -385,25 +394,25 @@
     </div>
 
     <section class="products">
-      <div class="container">
+      <div class="container product__container">
         <div class="products__title">
           <h2 class="trend__title">Наши изделия</h2>
         </div>
         <div class="product">
           <div class="product__card">
             <div class="product__card-picture">
-                <picture>
-                  <source 
-                    srcset="images/shop-item-desk1.jpg"
-                    media="(min-width: 200px) and (max-width: 359px)">
-                  <source 
-                    srcset="images/shop-item-tablet1.jpg"
-                    media="(min-width: 360px) and (max-width: 759px)">
-                  <source 
-                    srcset="images/shop-item-mobile1.jpg"
-                    media="(min-width: 760px) and (max-width: 1920px)">
-                  <img src="images/shop-item-desk1.jpg" alt="#">
-                </picture>
+              <picture>
+                <source 
+                  srcset="images/shop-item-mobile1.jpg"
+                  media="(max-width: 360px)">
+                <source 
+                  srcset="images/shop-item-tablet1.jpg"
+                  media="(max-width: 768px)">
+                <source 
+                  srcset="images/shop-item-desk1.jpg"
+                  media="(min-width: 769px)">
+                <img src="images/shop-item-desk3.jpg" alt="#">
+              </picture>
             </div>
             <div class="product__card-descr">
               <h3 class="product__card-descr-title">Подушка на диван</h3>
@@ -412,9 +421,9 @@
               <div class="product__box-prise">
                 <div class="product__box-price-list">
                   <div class="old__price">1000 ₽</div>
-                  <div class="product__card-descr-title">800 ₽</div> 
+                  <div class="product__price">800 ₽</div> 
                 </div>
-                <button class="email__button product__btn" type="button">магазин</button>
+                <button class="email__button product__btn" type="button">в магазин</button>
               </div>
             </div>
           </div>
@@ -423,15 +432,15 @@
             <div class="product__card-picture">
               <picture>
                 <source 
-                  srcset="images/shop-item-desk2.jpg"
-                  media="(min-width: 200px) and (max-width: 359px)">
-                  <source 
-                  srcset="images/shop-item-tablet2.jpg"
-                  media="(min-width: 360px) and (max-width: 759px)">
-                  <source 
                   srcset="images/shop-item-mobile2.jpg"
-                  media="(min-width: 760px) and (max-width: 1920px)">
-                <img src="images/shop-item-desk2.jpg" alt="#">
+                  media="(max-width: 360px)">
+                <source 
+                  srcset="images/shop-item-tablet2.jpg"
+                  media="(max-width: 768px)">
+                <source 
+                  srcset="images/shop-item-desk2.jpg"
+                  media="(min-width: 769px)">
+                <img src="images/shop-item-desk3.jpg" alt="#">
               </picture>
             </div>
             <div class="product__card-descr">
@@ -440,9 +449,9 @@
               <div class="product__box-prise">
                 <div class="product__box-price-list">
                   <div class="old__price"></div>
-                  <div class="product__card-descr-title">3500 ₽</div> 
+                  <div class="product__price">3500 ₽</div> 
                 </div>
-                <button class="email__button product__btn" type="button">магазин</button>
+                <button class="email__button product__btn" type="button">в магазин</button>
               </div>
             </div>
           </div>
@@ -451,26 +460,27 @@
             <div class="product__card-picture">
               <picture>
                 <source 
-                  srcset="images/shop-item-desk3.jpg"
-                  media="(min-width: 200px) and (max-width: 359px)">
-                  <source 
-                  srcset="images/shop-item-tablet3.jpg"
-                  media="(min-width: 360px) and (max-width: 759px)">
-                  <source 
                   srcset="images/shop-item-mobile3.jpg"
-                  media="(min-width: 760px) and (max-width: 1920px)">
-                <img src="images/shop-item-desk1.jpg" alt="#">
+                  media="(max-width: 360px)">
+                <source 
+                  srcset="images/shop-item-tablet3.jpg"
+                  media="(max-width: 768px)">
+                <source 
+                  srcset="images/shop-item-desk3.jpg"
+                  media="(min-width: 769px)">
+                <img src="images/shop-item-desk3.jpg" alt="#">
               </picture>
             </div>
-            <div class="product__card-descr">
+
+            <div class="product__card-descr product__card-descr-block">
               <h3 class="product__card-descr-title">Шестиугольная рамка</h3>
               <p class="product__card-descr-text">Необычная рамка для украшения дома из видео <a class="product__card-descr-text-link" href="#/">«Как сделать рамку из подручных средств за 30 минут»</a></p>
               <div class="product__box-prise">
                 <div class="product__box-price-list">
                   <div class="old__price">500 ₽</div>
-                  <div class="product__card-descr-title">400 ₽</div> 
+                  <div class="product__price">400 ₽</div> 
                 </div>
-                <button class="email__button product__btn" type="button">магазин</button>
+                <button class="email__button product__btn" type="button">в магазин</button>
               </div>
             </div>
           </div>
