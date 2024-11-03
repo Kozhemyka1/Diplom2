@@ -295,8 +295,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 392px;
-  height: 590px;
+  min-width: 392px;
+  min-height: 590px;
   color: #470101;
   padding: 20px;
 
@@ -965,11 +965,10 @@ label {
 
 .product__card-descr {
   position: relative;
-  padding: 58px 20px;
-  padding-bottom: 66px;
+  padding: 59px 20px 20px 20px;
   color: var(--color-dark);
   max-width: 346px;
-  max-height: 250px;
+  min-height: 264px;
   border: 3px var(--color-gold) solid;
   margin-top: -34px;
   z-index: 1;
@@ -1217,9 +1216,9 @@ label {
   
   .product__card-descr {
     margin: 0 auto;
-    margin-top: -36px;
+    margin-top: -39px;
     max-width: 337px;
-    min-height: 254px;
+    min-height: 262px;
   }
 
     
@@ -1479,12 +1478,29 @@ label {
   }
 
   .popup__content {
-    max-width: 322px;
-    max-height: 547px;
+    min-width: 300px;
+    min-height: 450px;
+    font-size: 12px;
   }
 
+  .form__text {
+    font-size: 12px;
+  }
+
+  .popup__radio span {
+    font-size: 12px;
+  }
+  
   .popup__title {
     margin-top: 0px;
+  }
+
+  .popup__select {
+    font-size: 12px;
+  }
+
+  .popup__comment-button {
+    font-weight: bold;
   }
 
   .header {
@@ -1544,9 +1560,12 @@ label {
     position: relative;
     box-sizing: border-box;
     max-width: 100%;
-    padding: 27px 13px 22px 18px;
+    padding: 22px 14px 26px 18px;
   }
 
+  .trend__column-descr-links-link {
+    margin-bottom: 10px;
+  }
   .trend__column {
     padding: 13px 16px;
   }
@@ -1587,11 +1606,13 @@ label {
   }
 
   .news__info-text {
-    margin-top: 11px;
+    margin-top: 16px;
+    padding-bottom: 18px;
+    padding-right: 5px;
   }
 
   .news__info-text p {
-    line-height: 21px;
+    line-height: 20px;
     font-size: 14px;
   }
 
@@ -1622,6 +1643,7 @@ label {
 
   .navigation__title {
     font-size: 16px;
+    margin-top: 14px;
   }
 
   .tags__list {
@@ -1630,6 +1652,20 @@ label {
 
   .diraction {
     margin-top: 51px;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .product__title {
+    margin-top: 10px;
+  }
+
+  .product__card-picture {
+    margin-top: -3px;
   }
 
   .diraction__links {
@@ -1642,13 +1678,32 @@ label {
 
   .product__card-descr {
     box-sizing: content-box;
-    max-height: 220px;
-    padding-top: 55px;
-    padding-bottom: 22px;
+    margin-top: -31px;
+    min-height: 214px;
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 23px;
+    padding-bottom: 0;
+    
   }
 
   .product__card-descr-title {
+    margin-top: 50px;
     margin-bottom: 15px;
+    font-size: 17px;
+  }
+
+  .product__card-descr-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .product__btn {
+    margin-bottom: 25px;
+  }
+
+  .news__info-text-lustBorder {
+    border-bottom: 3px solid #eeeeee;
   }
 
   .footer {

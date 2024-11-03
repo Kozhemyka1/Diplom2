@@ -20,18 +20,18 @@
             </label>
               <div class="popup__title">Ваш фитбек</div>
               <label for="how">
-                <span>Как часто вы заходите на сайт ?</span>
+                <span class="form__text">Как часто вы заходите на сайт ?</span>
                 <select class="popup__select">
-                  <option value="moscow" selected>Почти не захожу</option>
-                  <option value="st-petersburg">Несколько раз в день</option>
-                  <option value="kazan">Каждый день</option>
+                  <option class="form__text" value="Very rarely" selected>Почти не захожу</option>
+                  <option class="form__text" value="Sometimes">Несколько раз в день</option>
+                  <option class="form__text" value="Every-day">Каждый день</option>
                 </select>
               </label> 
           </form>
 
               <!-- <span>Вы плдписаны на e-mail рассылку ?</span> -->
           <form action="#/">
-            <label for="yes-no">Вы плдписаны на e-mail рассылку ?</label>
+            <label for="yes-no" class="form__text">Вы плдписаны на e-mail рассылку ?</label>
             <div class="popup__cheked">
               <div class="popup__radio">
                 <label class="checkbox-group">
@@ -49,7 +49,7 @@
           </form>
 
           <form class="popup__comment" action="#/" method="post">
-            <label for="comment">Расскажите, какой контент вы хотели бы видеть на нашем сайте ?</label>
+            <label for="comment" class="form__text">Расскажите, какой контент вы хотели бы видеть на нашем сайте ?</label>
             <textarea class="popup__comment-descr" required placeholder="Может больше рецептов ?" name="comment" id="comment"></textarea>
             <button class="popup__comment-button" type="submit">отправить</button>
           </form>
@@ -404,7 +404,7 @@
     <section class="products">
       <div class="container product__container">
         <div class="products__title">
-          <h2 class="trend__title">Наши изделия</h2>
+          <h2 class="trend__title product__title">Наши изделия</h2>
         </div>
         <div class="product">
           <div class="product__card">
@@ -482,7 +482,7 @@
 
             <div class="product__card-descr block">
               <h3 class="product__card-descr-title">Шестиугольная рамка</h3>
-              <p class="product__card-descr-text">Необычная рамка для украшения дома из видео <a class="product__card-descr-text-link" href="#/">«Как сделать рамку из подручных средств за 30 минут»</a></p>
+              <p class="product__card-descr-text">Необычная рамка для украшения дома из видео <a class="product__card-descr-text-link" href="#/">«Как сделать рамку из подручных средств за 30 минут» </a></p>
               <div class="product__box-prise">
                 <div class="product__box-price-list">
                   <div class="old__price">500 ₽</div>
