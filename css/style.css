@@ -1326,6 +1326,10 @@ label {
 
  @media (width <= 767px) {
 
+  :root {
+    --fs-title: 33px;
+  }
+
   .container {
     padding: 0 15px;
   }
@@ -1437,6 +1441,23 @@ label {
 } 
 
 @media (679px <= width < 766px) {
+
+  :root {
+    --fs-title: 33px;
+  }
+
+
+  .trend__columns {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 230px);
+    min-height: 460px;
+    gap: 4px;
+  }
+
+  .trend__column-background::before {
+    content: "";
+    min-height:  230px;
+  }
 
   .news__info {
     margin-right: 0;
@@ -1746,7 +1767,7 @@ label {
     min-height: 15rem;
     background-color: #000000;
     z-index: 0;
-}
+  }
 
   .trend__column-descr {
     padding: 1.1em;
@@ -1758,12 +1779,12 @@ label {
   }
 
   .trend__column-descr-links-link {
-    font-size: 1.3vw;
+    font-size: 1.4vw;
   }
 
   .trend__colum-descr-text {
     font-size: 1vw;
-    line-height: 2.3vw;
+    line-height: 2vw;
   } 
 }
 
